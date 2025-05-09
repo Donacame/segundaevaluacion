@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Organización de Eventos</title>
+  <link rel="stylesheet" href="style_formulario.css">
+</head>
+
+
+
+<body>
+  <section class="contact-section" id="contacto">
+    <h2>Contáctanos</h2>
+    <form class="contact-form" method="POST" action="/contact/add">
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+      </div>
+      <div class="form-group">
+        <input type="text" name="nombre" placeholder="Nombres completos" required>
+      </div>
+      <div class="form-group">
+        <textarea name="comentario" rows="5" placeholder="Cuéntanos sobre tu evento" required></textarea>
+      </div>
+      <button type="submit" class="cta-button">Enviar Mensaje</button>
+    </form>
+  </section>
+
+  <section class="event-section" id="evento">
+    <h2>Planifica tu Evento</h2>
+    <form class="event-form" method="POST" action="/event/add">
+      <div class="form-group">
+        <select name="tipo_evento" required>
+          <option value="">Seleccione el tipo de evento</option>
+          <option value="boda">Boda</option>
+          <option value="cumpleanos">Cumpleaños</option>
+          <option value="corporativo">Evento Corporativo</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input type="text" name="nombre_cliente" placeholder="Nombre del cliente" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+      </div>
+      <div class="form-group">
+        <input type="date" name="fecha_evento" placeholder="Fecha del evento" required>
+      </div>
+      <div class="form-group">
+        <input type="number" name="numero_invitados" placeholder="Número de invitados" min="1" required>
+      </div>
+      <div class="form-group">
+        <textarea name="detalles" rows="5" placeholder="Detalles adicionales sobre el evento" required></textarea>
+      </div>
+      <button type="submit" class="cta-button">Planificar Evento</button>
+    </form>
+  </section>
+
+  <script src="Controlador de Eventos.ts"></script>
+  <script src="Modelo de Eventos.ts"></script>
+</body>
+</html>

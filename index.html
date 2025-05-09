@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebration Master - Organizadores de Eventos</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><h1>Celebration Master</h1></div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+            <a href="/formularios/Formulario de Pago.html">Solicite aqui</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-slide slide-active">
+            <img src="fotos/fiestadecumple1.jpg" alt="Fiesta de cumpleaños">
+        </div>
+        <div class="hero-slide">
+            <img src="fotos/celebraciondeboda.jpeg" alt="Celebración de boda">
+        </div>
+        <div class="hero-slide">
+            <img src="fotos/celebraciondisco.avif" alt="Celebración estilo disco">
+        </div>
+        <div class="hero-content">
+            <h2>Tu celebración perfecta comienza aqui</h2>
+            <p>¡Explora y dejanos inspirarte!</p> 
+            <p>Somos expertos en creación de momentos memorables que supera tus espextativas</p>
+        </div>
+    </section>
+
+    <section class="servicios" id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios-grid">
+            <article class="servicio-card">
+                <div class="card-imagen">
+                    <img src="fotos/Fiesta-de-princesa-disney.jpg" alt="Cumpleaños infantiles">
+                </div>
+                <div class="card-contenido">
+                    <h3>Cumpleaños Mágicos y llenos de alegria</h3>
+                    <p>Celebraciones de temáticas variadas para todas las edades</p>
+                </div>
+            </article>
+            
+            <article class="servicio-card">
+                <div class="card-imagen">
+                    <img src="fotos/decoracion-bodas-playa-24.jpg" alt="Bodas de ensueño">
+                </div>
+                <div class="card-contenido">
+                    <h3>Bodas Exclusivas</h3>
+                    <p>Coordinación integral para tu día más especial</p>
+                </div>
+            </article>
+
+            <article class="servicio-card">
+                <div class="card-imagen">
+                    <img src="fotos/eventoscorporativos.jpg" alt="Fiestas corporativas">
+                </div>
+                <div class="card-contenido">
+                    <h3>Eventos Corporativos</h3>
+                    <p>Organización profesional de convenciones y lanzamientos</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="galeria" id="galeria">
+        <h2>Nuestros Trabajos más recientes</h2>
+        <div class="grid-galeria">
+            <div class="item-galeria">
+                <img src="fotos/1366_2000.jpg" alt="Evento 1">
+            </div>
+            <div class="item-galeria">
+                <img src="fotos/fiestadelosvengadores.jpg" alt="Evento 2">
+            </div>
+            <div class="item-galeria">
+                <img src="fotos/decoracion-fiesta-de-15-anos-en-chiquitita-plaza-768x1024.jpeg" alt="Evento 3">
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <h2>Planifica tu Evento YA!</h2>
+        <p>Contactanos a traves de nuestras redes sociales</p>
+        <div>
+            <a href="https://www.instagram.com/nazareth_cm16?igsh=eHp0dmh2ZDc0b3Mw">Instagram</a>
+            <a href="https://www.facebook.com/share/1AYHmx1tQs/">Facebook</a>
+            <a href="http://wa.me/+584244425637">whatsapp</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Magic Events - Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-slide');
+        
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('slide-active'));
+            slides[n].classList.add('slide-active');
+        }
+        
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }, 5000);
+    </script>
+
+<script src="validaciones.ts"></script>
+
+
+</body>
+</html>
