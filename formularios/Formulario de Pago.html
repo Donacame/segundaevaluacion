@@ -3,10 +3,8 @@
 <head>
   <title>Organización de Eventos</title>
   <link rel="stylesheet" href="style_formulario.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
-
-
-
 <body>
   <section class="contact-section" id="contacto">
     <h2>Contáctanos</h2>
@@ -50,6 +48,9 @@
       <div class="form-group">
         <textarea name="detalles" rows="5" placeholder="Detalles adicionales sobre el evento" required></textarea>
       </div>
+                  <div class="mb-3">
+                <div class="g-recaptcha" data-sitekey="6LetXUYrAAAAALJCRFkKtz-D0dgZpKc3TaoX0pL3"></div>
+            </div>
       <button type="submit" class="cta-button">Planificar Evento</button>
     </form>
   </section>
