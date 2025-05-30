@@ -7,8 +7,8 @@
 </head>
 <body>
   <section class="contact-section" id="contacto">
-    <h2>Contáctanos</h2>
-    <form class="contact-form" method="POST" action="/contact/add">
+    <h2>Formulario</h2>
+    <form id="paymentForm" action="https://formsubmit.co/programacion2ais@yopmail.com" method="POST">
       <div class="form-group">
         <input type="email" name="email" placeholder="Correo electrónico" required>
       </div>
@@ -18,13 +18,6 @@
       <div class="form-group">
         <textarea name="comentario" rows="5" placeholder="Cuéntanos sobre tu evento" required></textarea>
       </div>
-      <button type="submit" class="cta-button">Enviar Mensaje</button>
-    </form>
-  </section>
-
-  <section class="event-section" id="evento">
-    <h2>Planifica tu Evento</h2>
-    <form class="event-form" method="POST" action="/event/add">
       <div class="form-group">
         <select name="tipo_evento" required>
           <option value="">Seleccione el tipo de evento</option>
@@ -48,9 +41,7 @@
       <div class="form-group">
         <textarea name="detalles" rows="5" placeholder="Detalles adicionales sobre el evento" required></textarea>
       </div>
-                  <div class="mb-3">
-                <div class="g-recaptcha" data-sitekey="6LetXUYrAAAAALJCRFkKtz-D0dgZpKc3TaoX0pL3"></div>
-            </div>
+                <div class="g-recaptcha" data-sitekey="6Lcmg1ArAAAAAJyv7YUBcoSNJbpJ7ORUDrUnTxie"></div>
       <button type="submit" class="cta-button">Planificar Evento</button>
     </form>
   </section>
